@@ -24,11 +24,12 @@ parametros default:
         'fileExtension': 'Formato de archivo no permitido ({{ value }} únicamente).'
       }
     },
-    useForm: true,
+    useForm: true, // creates a <form> element to send the files
     formBtnText: "Leer archivo",
     form: {
       action: "#",
       method: "post"
+      // enctype: "multipart/form-data"
     }
   };
 ```
@@ -47,4 +48,4 @@ methods:
  * hideSubmitButton
 
 ej. `$.dropifyFile().help()`
-ej. `$("input[type=file].selector").dropifyFile().setActionForm('/process-file.php');`
+ej. `$formObj=$("input[type=file].selector").dropifyFile().getForm();`
