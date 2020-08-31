@@ -47,5 +47,6 @@ methods:
  * showSubmitButton
  * hideSubmitButton
 
-ej. `$.dropifyFile().help()`
-ej. `$formObj=$("input[type=file].selector").dropifyFile().getForm();`
+ej. 
+ * `$.dropifyFile().help()`
+ * `$formObj=$("input[type=file].selector").dropifyFile().getForm();`
